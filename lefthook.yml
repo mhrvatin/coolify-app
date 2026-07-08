@@ -1,0 +1,23 @@
+pre-commit:
+  parallel: true
+  commands:
+    no-main:
+      run: bash .claude/hooks/no-main-commit.sh
+    no-node-modules:
+      run: bash .claude/hooks/no-node-modules-commit.sh
+    no-secrets:
+      run: bash .claude/hooks/no-secrets-commit.sh
+    lint:
+      run: bun run biome check --write --no-errors-on-unmatched --staged .
+      stage_fixed: true
+    build:
+      # Keep committed dist/ in sync with src/ so consumers never see stale output.
+      run: bun run build && git add dist
+
+pre-push:
+  parallel: false
+  commands:
+    typecheck:
+      run: bun run typecheck
+    test:
+      run: bun test
