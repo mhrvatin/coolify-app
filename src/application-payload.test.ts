@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { buildCreatePayload, buildDesiredConfigPayload } from './application-payload';
+import { buildCreatePayload, buildDesiredConfigPayload } from './application-payload.js';
 
 const desired = {
 	name: 'reda',

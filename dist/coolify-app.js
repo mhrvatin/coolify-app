@@ -1,6 +1,6 @@
 import * as command from '@pulumi/command';
 import * as pulumi from '@pulumi/pulumi';
-import { getPostgresDatabaseUrl } from './postgres';
+import { getPostgresDatabaseUrl } from './postgres.js';
 // bun's ESM loader resolves this relative to the *compiled* file (dist/coolify-app.js), so it
 // keeps pointing at the sibling coolify-deploy.js that tsc emits alongside it — in src/ during
 // tests, in dist/ for consumers.

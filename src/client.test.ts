@@ -1,6 +1,6 @@
 // infra/coolify/client.test.ts
 import { describe, expect, mock, test } from 'bun:test';
-import { coolifyRequest } from './client';
+import { coolifyRequest } from './client.js';
 
 const config = { apiUrl: 'https://coolify.example.com/api/v1', apiToken: 'test-token' };
 

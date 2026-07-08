@@ -2,8 +2,8 @@
 	"compilerOptions": {
 		"strict": true,
 		"target": "es2021",
-		"module": "esnext",
-		"moduleResolution": "bundler",
+		"module": "nodenext",
+		"moduleResolution": "nodenext",
 		"sourceMap": true,
 		"esModuleInterop": true,
 		"noFallthroughCasesInSwitch": true,

@@ -1,9 +1,9 @@
 // Run via `bun run coolify-deploy.js` as the create/update command of a @pulumi/command
 // local.Command resource (see coolify-app.ts). All inputs arrive through environment variables,
 // never argv, so secrets (apiToken, envVars) never show up in a process listing.
-import { buildCreatePayload, buildDesiredConfigPayload } from './application-payload';
-import { coolifyRequest } from './client';
-import { buildEnvBulkPayload } from './env-payload';
+import { buildCreatePayload, buildDesiredConfigPayload } from './application-payload.js';
+import { coolifyRequest } from './client.js';
+import { buildEnvBulkPayload } from './env-payload.js';
 function clientConfig(config) {
     return { apiUrl: config.apiUrl, apiToken: config.apiToken };
 }

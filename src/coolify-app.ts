@@ -1,6 +1,6 @@
 import * as command from '@pulumi/command';
 import * as pulumi from '@pulumi/pulumi';
-import { getPostgresDatabaseUrl, type PostgresOptions } from './postgres';
+import { getPostgresDatabaseUrl, type PostgresOptions } from './postgres.js';
 
 export interface CoolifyApplicationArgs {
 	name: pulumi.Input<string>;
