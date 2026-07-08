@@ -13,6 +13,7 @@
         "typescript": "5.9.3",
       },
       "peerDependencies": {
+        "@pulumi/command": "1.2.1",
         "@pulumi/pulumi": "3.250.0",
       },
     },
