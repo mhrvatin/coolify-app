@@ -3,6 +3,7 @@ export interface DesiredApplicationConfig {
     gitBranch: string;
     domain: string;
     healthCheckPath: string;
+    port: string;
 }
 export declare function buildDesiredConfigPayload(config: DesiredApplicationConfig): {
     name: string;
@@ -18,6 +19,7 @@ export interface ApplicationCreateInput extends DesiredApplicationConfig {
     environmentName: string;
     privateKeyUuid: string;
     gitRepository: string;
+    buildPack: string;
 }
 export declare function buildCreatePayload(input: ApplicationCreateInput): {
     name: string;

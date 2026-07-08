@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"target": "es2021",
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"sourceMap": true,
+		"esModuleInterop": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitReturns": true,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true,
+		"declaration": true,
+		"types": ["bun"]
+	},
+	"include": ["src/**/*.ts"]
+}
