@@ -5,9 +5,9 @@ import {
 	type ApplicationCreateInput,
 	buildCreatePayload,
 	buildDesiredConfigPayload
-} from './application-payload';
-import { type CoolifyClientConfig, coolifyRequest } from './client';
-import { buildEnvBulkPayload } from './env-payload';
+} from './application-payload.js';
+import { type CoolifyClientConfig, coolifyRequest } from './client.js';
+import { buildEnvBulkPayload } from './env-payload.js';
 
 export interface DeployConfig extends ApplicationCreateInput {
 	apiUrl: string;

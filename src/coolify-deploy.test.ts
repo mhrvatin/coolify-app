@@ -1,5 +1,5 @@
 import { describe, expect, mock, test } from 'bun:test';
-import { type DeployConfig, deploy, findExistingAppUuid } from './coolify-deploy';
+import { type DeployConfig, deploy, findExistingAppUuid } from './coolify-deploy.js';
 
 const baseConfig: DeployConfig = {
 	name: 'reda',

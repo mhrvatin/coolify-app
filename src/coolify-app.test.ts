@@ -1,6 +1,6 @@
 import { beforeAll, describe, expect, test } from 'bun:test';
 import * as pulumi from '@pulumi/pulumi';
-import { CoolifyApp } from './coolify-app';
+import { CoolifyApp } from './coolify-app.js';
 
 beforeAll(() => {
 	pulumi.runtime.setMocks({

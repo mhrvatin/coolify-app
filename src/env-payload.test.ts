@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { buildEnvBulkPayload } from './env-payload';
+import { buildEnvBulkPayload } from './env-payload.js';
 
 describe('buildEnvBulkPayload', () => {
 	test('maps a record into Coolify bulk-env entries', () => {

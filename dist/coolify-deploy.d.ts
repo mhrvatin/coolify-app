@@ -1,4 +1,4 @@
-import { type ApplicationCreateInput } from './application-payload';
+import { type ApplicationCreateInput } from './application-payload.js';
 export interface DeployConfig extends ApplicationCreateInput {
     apiUrl: string;
     apiToken: string;

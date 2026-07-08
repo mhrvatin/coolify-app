@@ -1,6 +1,6 @@
 import * as command from '@pulumi/command';
 import * as pulumi from '@pulumi/pulumi';
-import { type PostgresOptions } from './postgres';
+import { type PostgresOptions } from './postgres.js';
 export interface CoolifyApplicationArgs {
     name: pulumi.Input<string>;
     gitBranch: pulumi.Input<string>;
